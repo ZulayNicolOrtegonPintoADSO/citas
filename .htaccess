@@ -1,0 +1,10 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine on
+    RewriteRule ^$ public/ [L]
+    RewriteRule (.*) public/$1 [L]
+</IfModule>
+
+<!-- 
+    Establece reglas de la URL, dice que si la URL está vacía lo redirija a la carpeta public y 
+    si no está vacía lo redirije a la carpeta public seguido de la URL indicada
+-->
